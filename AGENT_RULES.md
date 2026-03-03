@@ -1,0 +1,36 @@
+# Agent Rules (editor-agnostic)
+
+## What this product does
+- <one sentence: what it does, for whom, core value>
+
+## Tech stack
+- Framework: Next.js (App Router)
+- DB: Supabase (Postgres + Auth)
+- Styling: Tailwind
+- Language: TypeScript strict
+- Tests: <vitest|jest> + <playwright|cypress>
+- Deploy: Vercel
+
+## Architecture rules
+- PR-first: never push to main
+- Server Components by default; `use client` only when needed
+- Keep secrets in `.env.local` (never commit)
+
+## File structure
+- app/
+- components/
+- lib/
+- types/
+
+## Naming
+- Components: PascalCase
+- Files: kebab-case
+
+## Do not touch (unless explicitly asked)
+- middleware.ts
+- app/layout.tsx
+- generated types
+
+## Pull request rules
+- 1 PR per task
+- Include test command + what changed
